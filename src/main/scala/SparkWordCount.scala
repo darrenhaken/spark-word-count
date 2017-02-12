@@ -7,7 +7,7 @@ import org.apache.spark.SparkConf
 object SparkWordCount {
   def main(args: Array[String]): Unit = {
     //    System.setProperty("hadoop.home.dir", "D:")
-    val logFile = "/Users/dhaken/Workarea/haken/spark-word-count/words.txt"
+    val logFile = "~/words.txt"
 
     val conf = new SparkConf()
       .setAppName("SparkWordCount")
