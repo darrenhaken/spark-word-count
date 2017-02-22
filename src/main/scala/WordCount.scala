@@ -15,7 +15,9 @@ object WordCount {
 
     val wordCount = words.map(word => (word, 1)).reduceByKey(_ + _)
 
-    wordCount.saveAsTextFile("words.count")
+    wordCount.
+
+    wordCount.coalesce(1).saveAsTextFile("words.count")
   }
 
   def createContext(): SparkContext = {
